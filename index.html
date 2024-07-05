@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bere mi amor❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        
+        <div class="content">
+            <div class="introduce"></div>
+            <div class="thumbnail-list">
+                <div class="wrapper">
+                   
+                </div>
+            </div>
+        </div>
+        <div class="navigation">
+            <button class="next-button">next</button>
+            <span class="line"></span>
+            <span class="ordinal-number">
+
+            </span>
+        </div>
+
+    </div>
+    
+    <div class="area">
+        <ul class="background">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+    
+    <audio id="mysound" src="./sound/sound.mp3" autoplay loop >
+    </audio>
+
+
+    <!-- <embed id="playermp3" src="./sound/sound.mp3" type="audio/mp3" autostart="true" hidden="true" > -->
+   
+    <script src="index.js"></script>
+    <script>
+      
+        var audio = document.getElementById("mysound");
+        audio.volume=0.1;
+        div = document.querySelector('body');
+        
+        var btn= document.querySelector(".next-button");
+        btn.addEventListener("click", () =>{
+            audio.play();
+        });
+
+        div.addEventListener('mousemove', function(x) {
+            audio.play();
+        });
+
+    </script>
+</body>
+</html>
